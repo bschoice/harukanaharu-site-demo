@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254"><image href="harukanaharu01.png" width="1254" height="1254"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" role="img" aria-label="Harukanaharu white candle">
+  <defs>
+    <clipPath id="candleClip" clipPathUnits="userSpaceOnUse">
+      <path d="M615 0 C645 75 656 130 639 184 L729 207 C777 219 803 244 803 278 L803 1094 C803 1164 753 1210 627 1210 C501 1210 451 1164 451 1094 L451 278 C451 244 477 219 525 207 L615 184 C598 130 585 75 615 0 Z"/>
+    </clipPath>
+  </defs>
+  <image href="harukanaharu01.png" x="0" y="0" width="1254" height="1254" preserveAspectRatio="xMidYMid meet" clip-path="url(#candleClip)"/>
+</svg>
