@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="concept.css">
   <link rel="stylesheet" href="lessons.css">
   <link rel="stylesheet" href="top.css">
+  <link rel="stylesheet" href="responsive-improvements.css">
 </head>
 <body>
   <header class="header">
@@ -20,10 +21,18 @@
       <a href="#profile">PROFILE</a>
       <a href="#gallery">GALLERY</a>
       <a href="#service">LESSON</a>
+      <a href="#order">ORDER</a>
       <a href="#faq">FAQ</a>
-      <a class="shop" href="#links">SHOP</a>
+      <a class="shop" href="#contact">CONTACT</a>
     </nav>
   </header>
+
+  <nav class="mobile-bottom-nav" aria-label="スマートフォン用メニュー">
+    <a href="#gallery">WORKS</a>
+    <a href="#service">LESSON</a>
+    <a href="#order">ORDER</a>
+    <a class="contact" href="#contact">CONTACT</a>
+  </nav>
 
   <main>
     <section class="hero" id="top">
@@ -33,6 +42,11 @@
           <img src="images/harukanaharu01.png" alt="ハルカナハルの白いキャンドル" fetchpriority="high">
         </div>
         <p class="vertical right">季節の記憶を、<br>そっと灯す。</p>
+      </div>
+      <div class="hero-floating-actions">
+        <a href="#gallery">WORKS</a>
+        <a href="#service">LESSON</a>
+        <a class="primary" href="#contact">CONTACT</a>
       </div>
       <div class="hero-bottom">
         <div class="eyebrow">CANDLE ARTIST KANA</div>
@@ -72,12 +86,13 @@
     <section class="section dark-section" id="gallery">
       <div class="inner">
         <h2 class="gallery-heading">GALLERY</h2>
+        <p class="gallery-intro">花、香り、贈りもの、オーダー制作。暮らしの中にそっと残る灯りを、一点ずつ制作しています。</p>
         <div class="gallery">
           <article class="work large"><div class="photo" data-label="GALLERY 01"><img src="images/harukanaharu18.png" alt="ボタニカルキャンドル作品" loading="lazy"></div><div class="caption"><strong>BOTANICAL</strong><br><span>季節の花を閉じ込めた灯り</span></div></article>
           <article class="work"><div class="photo" data-label="GALLERY 02"><img src="images/harukanaharu19.png" alt="アロマキャンドル作品" loading="lazy"></div><div class="caption"><strong>AROMA</strong><br><span>香りで整える夜時間</span></div></article>
           <article class="work"><div class="photo" data-label="GALLERY 03"><img src="images/harukanaharu25.png" alt="ギフトキャンドル作品" loading="lazy"></div><div class="caption"><strong>GIFT</strong><br><span>想いを贈るキャンドル</span></div></article>
           <article class="work"><div class="photo" data-label="GALLERY 04"><img src="images/harukanaharu23.png" alt="オーダーとレッスンのキャンドル作品" loading="lazy"></div><div class="caption"><strong>ORDER LESSON</strong><br><span>オーダーとレッスンのご相談</span></div></article>
-          <article class="work"><div class="photo" data-label="GALLERY 05"><img src="images/harukanaharu26.png" alt="オーダーキャンドル作品" loading="lazy"></div><div class="caption"><strong>ORDER</strong><br><span>世界にひとつの灯り</span></div></article>
+          <article class="work wide"><div class="photo" data-label="GALLERY 05"><img src="images/harukanaharu26.png" alt="オーダーキャンドル作品" loading="lazy"></div><div class="caption"><strong>ORDER</strong><br><span>世界にひとつの灯り</span></div></article>
         </div>
       </div>
     </section>
@@ -99,6 +114,7 @@
                 <div class="lesson-meta-row"><dt>PRICE</dt><dd>6,600円（税込）</dd></div>
                 <div class="lesson-meta-row"><dt>TIME</dt><dd>約120分</dd></div>
               </dl>
+              <a class="lesson-cta" href="#contact">このレッスンを相談する</a>
             </div>
           </article>
           <article class="lesson-card">
@@ -111,6 +127,7 @@
                 <div class="lesson-meta-row"><dt>PRICE</dt><dd>5,500円（税込）</dd></div>
                 <div class="lesson-meta-row"><dt>TIME</dt><dd>約90分</dd></div>
               </dl>
+              <a class="lesson-cta" href="#contact">このレッスンを相談する</a>
             </div>
           </article>
           <article class="lesson-card">
@@ -123,6 +140,7 @@
                 <div class="lesson-meta-row"><dt>PRICE</dt><dd>7,700円（税込）</dd></div>
                 <div class="lesson-meta-row"><dt>TIME</dt><dd>約120分</dd></div>
               </dl>
+              <a class="lesson-cta" href="#contact">このレッスンを相談する</a>
             </div>
           </article>
           <article class="lesson-card">
@@ -135,10 +153,44 @@
                 <div class="lesson-meta-row"><dt>PRICE</dt><dd>11,000円（税込）〜</dd></div>
                 <div class="lesson-meta-row"><dt>TIME</dt><dd>約150分</dd></div>
               </dl>
+              <a class="lesson-cta" href="#contact">このレッスンを相談する</a>
             </div>
           </article>
         </div>
-        <p class="lesson-note">※画像は仮枠です。実際のキャンドル写真に差し替えると完成度が上がります。</p>
+        <p class="lesson-note">どのレッスンが合うか迷う方も、お気軽にご相談ください。</p>
+      </div>
+    </section>
+
+    <section class="section order-section" id="order">
+      <div class="inner order-layout">
+        <div class="order-photo"><img src="images/harukanaharu26.png" alt="ハルカナハルのオーダーキャンドル"></div>
+        <div class="order-copy-card">
+          <div class="kicker">ORDER MADE</div>
+          <h2>ひとつだけの<br>灯りを。</h2>
+          <p>記念日、贈りもの、店舗ディスプレイ、イベント用キャンドルなど、イメージに合わせたキャンドル制作をご相談いただけます。</p>
+          <div class="order-points">
+            <div>ギフト用の一点制作</div>
+            <div>色・香り・雰囲気のご相談</div>
+            <div>イベントや撮影用の制作</div>
+          </div>
+          <a class="section-cta" href="#contact">ORDERを相談する</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section recommend-section" id="recommend">
+      <div class="inner">
+        <div class="head">
+          <div class="en">FOR YOU</div>
+          <div><div class="kicker">RECOMMEND</div><h2 class="title">こんな方へ</h2><p class="lead">レッスンも、オーダー制作も、はじめての方に分かりやすくご案内します。</p></div>
+        </div>
+        <div class="recommend-grid">
+          <div class="recommend-card"><small>01</small><p>自分用のキャンドルを作ってみたい方</p></div>
+          <div class="recommend-card"><small>02</small><p>大切な人へ灯りのギフトを贈りたい方</p></div>
+          <div class="recommend-card"><small>03</small><p>季節の花や香りを暮らしに取り入れたい方</p></div>
+          <div class="recommend-card"><small>04</small><p>イベントや記念日のキャンドルを相談したい方</p></div>
+        </div>
+        <div class="contact-helper"><a class="section-cta" href="#contact">まずは相談する</a></div>
       </div>
     </section>
 
